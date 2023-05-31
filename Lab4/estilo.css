@@ -1,0 +1,379 @@
+:root{
+    --degradado_craneo : linear-gradient(#ffffff,#C8C8C8, #C0C0C0 / 50%);
+    --degradado_cadena : linear-gradient(#000000,#d4a020); 
+}
+
+/*--FONDO--------------------------------------------------------------------------------------------------------------------------*/
+
+#fondo{
+    width: 1400px;
+    height: 500px;
+    background-color: #4b0082;
+    position: absolute;
+}
+
+/*--PUERTA-------------------------------------------------------------------------------------------------------------------------*/
+
+#puerta{
+    position: relative;
+    width: 200px;
+    height: 330px;
+    background-color: #10001C;
+    border-radius: 150px 150px 0px 0px;
+    border: 20px solid #2e004f;
+    border-bottom: transparent;
+    top: 30%;
+    left: 40%;
+}
+
+/*--CRANEO-------------------------------------------------------------------------------------------------------------------------*/
+
+#craneo{
+    position: relative;
+    width: 140px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 150px 150px 0px 0px;
+    top: 10%;
+    left: 15%;
+    box-shadow: inset 10px 0px 10px rgb(100 100 100 / 100%),
+    inset -10px 0px 10px rgb(100 100 100 / 100%);
+}
+
+#craneo2{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    top: 10%;
+    left: 30%;
+    box-shadow: 20px 0px 0px #53485C,
+    -20px 0px 0px #53485C,
+    inset 10px 0px 10px rgb(160 160 160 / 100%),
+    inset -10px 0px 10px rgb(160 160 160 / 100%); 
+
+}
+
+/*--NARIZ--------------------------------------------------------------------------------------------------------------------------*/
+
+#nariz{
+    position: relative;
+    width: 12px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 50% / 100% 100% 0 0;
+    top: 85%;
+    left: 45%;
+}
+
+/*--OJOS---------------------------------------------------------------------------------------------------------------------------*/
+
+#ojos{
+    position: relative;
+    width: 45px;
+    height: 40px;
+    background-color: #000000;
+    top: 30%;
+    left: 12%;
+    border-radius: 42% 42% 42% 42%;
+    box-shadow: 57px 0px 0px #000000,
+    3px 3px 0px #AAAAAA,
+    60px 3px 0px #AAAAAA;
+}
+
+#ojos2{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: #7fff00;
+    top: 32%;
+    left: 35%;
+    border-radius: 150px 150px 150px 150px;
+    box-shadow: 57px 0px 0px #7fff00;
+}
+
+#ojos2::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #7fff00;
+    filter: blur(5px);
+    top: -25%;
+    left: -30%;
+    border-radius: 150px 150px 150px 150px;
+    box-shadow: 57px 0px 0px #7fff00;
+}
+
+/*--BOCA---------------------------------------------------------------------------------------------------------------------------*/
+
+#boca{
+    position: relative;
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+    top: 50%;
+    left: 12%;
+}
+
+#boca2{
+    position: relative;
+    width: 3px;
+    height: 20px;
+    background-color: #000000;
+    top: 20%;
+    left: 10%;
+    transform: rotate(180deg);
+    box-shadow: -12px 0px 0px #000000,
+    -24px 0px 0px #000000,
+    -36px 0px 0px #000000,
+    -48px 0px 0px #000000,
+    -60px 0px 0px #000000;
+}
+
+/*--CADENA-------------------------------------------------------------------------------------------------------------------------*/
+
+#cadena{
+    position: relative;
+    width: 80px;
+    height: 70px;
+    background-color: #10001C;
+    border-radius: 50% / 100% 100% 0 0;
+    border: 3px solid #d4a020;
+    border-bottom: transparent;
+    top: 20%;
+    left: 30%;
+    transform: rotate(180deg);
+}
+
+#cruz{
+    position: relative;
+    width: 3px;
+    height: 25px;
+    background-color: #d4a020;
+    top: 20%;
+    left: 50%;
+    transform: rotate(180deg);
+}
+
+#cruz2{
+    position: relative;
+    width: 3px;
+    height: 20px;
+    background-color: #d4a020;
+    top: 12%;
+    left: 50%;
+    transform: rotate(90deg);
+}
+
+/*--CUERNOS IZQUIERDA--------------------------------------------------------------------------------------------------------------*/
+
+#cuerno_izquierda{
+    position: relative;
+    width: 10px;
+    height: 130px;
+    background-color: #6052BA;
+    top: -90%;
+    left: -25%;
+    transform: rotate(100deg);
+}
+
+#cuerno_izquierda::before{
+    content: "";
+    position: absolute;
+    width: 5.5px;
+    height: 57px;
+    background-color: #6052BA;
+    top: 101%;
+    left: -180%;
+    transform: rotate(7deg);
+}
+
+#triangulo_cuerno_izquierda{
+    position: relative;
+    width: 0px;
+    border: 10px solid transparent;
+    border-bottom: 120px solid #6052BA;
+    top: -275%;
+    left: -70%;
+    transform: rotate(-3deg);
+}
+
+#triangulo_cuerno_izquierda::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    border: 5px solid transparent;
+    border-bottom: 40px solid #6052BA;
+    top: 38px;
+    right: 51px;
+    transform: rotate(-3deg);
+}
+
+#cuerno_izquierda2{
+    position: relative;
+    width: 5.5px;
+    height: 80px;
+    background-color: #6052BA;
+    top: -385%;
+    left: -36%;
+    transform: rotate(-110deg);
+}
+
+#cuerno_izquierda2::before{
+    content: "";
+    position: absolute;
+    width: 5.5px;
+    height: 40px;
+    background-color: #6052BA;
+    top: -8%;
+    left: -30px;
+    transform: rotate(360deg);
+}
+
+#triangulo_cuerno_izquierda2{
+    position: relative;
+    width: 0px;
+    border: 5px solid transparent;
+    border-bottom: 65px solid #6052BA;
+    top: -495%;
+    left: -12%;
+    transform: rotate(3deg);
+}
+
+#triangulo_cuerno_izquierda2::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    border: 5px solid transparent;
+    border-bottom: 25px solid #6052BA;
+    top: 81px;
+    right: 26px;
+    transform: rotate(3deg);
+}
+
+/*--CUERNOS DERECHA----------------------------------------------------------------------------------------------------------------*/
+
+#cuerno_derecha{
+    position: relative;
+    width: 10px;
+    height: 130px;
+    background-color: #6052BA;
+    bottom: 508px;
+    left: 112%;
+    transform: rotate(-100deg);
+}
+
+#cuerno_derecha::before{
+    content: "";
+    position: absolute;
+    width: 5.5px;
+    height: 57px;
+    background-color: #6052BA;
+    bottom: -59px;
+    left: 20px;
+    transform: rotate(-7deg);
+}
+
+#triangulo_cuerno_derecha{
+    position: relative;
+    width: 0px;
+    border: 10px solid transparent;
+    border-bottom: 120px solid #6052BA;
+    bottom: 710px;
+    left: 151%;
+    transform: rotate(3deg);
+}
+
+#triangulo_cuerno_derecha::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    border: 5px solid transparent;
+    border-bottom: 40px solid #6052BA;
+    top: 38px;
+    right: -62px;
+    transform: rotate(3deg);
+}
+
+#cuerno_derecha2{
+    position: relative;
+    width: 5.5px;
+    height: 80px;
+    background-color: #6052BA;
+    top: -760%;
+    left: 127%;
+    transform: rotate(110deg);
+}
+
+#cuerno_derecha2::before{
+    content: "";
+    position: absolute;
+    width: 5.5px;
+    height: 40px;
+    background-color: #6052BA;
+    top: -8%;
+    left: 30px;
+    transform: rotate(360deg);
+}
+
+#triangulo_cuerno_derecha2{
+    position: relative;
+    width: 0px;
+    border: 5px solid transparent;
+    border-bottom: 65px solid #6052BA;
+    top: -870%;
+    left: 100%;
+    transform: rotate(-3deg);
+}
+
+#triangulo_cuerno_derecha2::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    border: 5px solid transparent;
+    border-bottom: 25px solid #6052BA;
+    top: 81px;
+    right: -37px;
+    transform: rotate(3deg);
+}
+
+/*--CICATRIZ------------------------------------------------------------------------------------------------------------------------*/
+
+#cicatriz{
+    position: absolute;
+    width: 1.5px;
+    height: 20px;
+    background-color: #6d6875;
+    filter: blur(1.5px);
+    bottom: 91px;
+    left: 47%;
+    transform: rotate(140deg);
+}
+
+#cicatriz::before{
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 15px;
+    background-color: #6d6875;
+    filter: blur(1.5px);
+    bottom: 10px;
+    left: 8px;
+    transform: rotate(270deg);
+}
+
+#cicatriz::after{
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 15px;
+    background-color: #6d6875;
+    filter: blur(1.5px);
+    bottom: 22px;
+    left: 13px;
+    transform: rotate(-250%);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
